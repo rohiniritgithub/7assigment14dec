@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a,b;
+		let thirdvar;
+		a=prompt("enter your number");
+		b=prompt("enter your number");
+
+		function swap_number()
+		{
+		/* thirdvar= a; //using 3rd variable
+        a = b;
+        b=thirdvar; */
+
+
+        a = a + b; //without using 3rd variable
+        b = a - b;
+        a = a - b;
+
+        document.write(`The value of<b>  a </b>after swapping: ${a} <br> `);
+        document.write(`The value of <b>  b </b> after swapping: ${b} <br> `);
+        }
+		swap_number(a,b)
+	</script>
+
+</body>
+</html>
